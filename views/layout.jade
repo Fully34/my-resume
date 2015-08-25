@@ -1,9 +1,18 @@
 doctype html
-html(lang='en')
-	head
-		meta(charset="utf-8")
-		title Untitled
+html(lang='en', ng-app='resume')
+  head
+    meta(charset="utf-8")
+    title Untitled
 
-	body
-		block content
-		
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+
+  body
+
+    div(ng-view)
+  
+  //- Angular
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-resource.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.js')
+
+  script(type='text/javascript', src='js/main.js')
